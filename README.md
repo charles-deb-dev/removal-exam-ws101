@@ -9,11 +9,15 @@
 
 #### File Structure
 
- ```plaintext
- project/
- ├── index.html
- └── styles.css (optional)
- ```
+```plaintext
+project/
+├── portfolio/
+│   ├── index.html
+│   └── styles.css (optional)
+└── javascript/
+    ├── problem\_1.js
+    └── problem\_2.js
+
 
 #### HTML Requirements (20 points)
 
