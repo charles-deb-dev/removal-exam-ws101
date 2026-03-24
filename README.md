@@ -17,7 +17,7 @@ project/
 └── javascript/
     ├── problem\_1.js
     └── problem\_2.js
-
+```
 
 #### HTML Requirements (20 points)
 
