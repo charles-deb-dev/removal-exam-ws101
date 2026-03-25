@@ -7,9 +7,20 @@ const assert = require('node:assert'); // Do not touch this
  */
 
 function findTwoSum(nums, target) {
+  const map = {};
 
-  // TODO: Write your solution here.
+  for (let i = 0; i < nums.length; i++) {
+    const complement = target - nums[i];
 
+    if (map.hasOwnProperty(complement)) {
+      return [map[complement], i];
+    }
+
+    map[nums[i]] = i;
+  }
+
+  return [];
+}
   return [];
 }
 
