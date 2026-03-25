@@ -13,8 +13,25 @@ const assert = require('node:assert'); // Do not touch this
  * - running node problem_2.js on the terminal
  */
 function isValidParentheses(str) {
+  const stack = [];
+  const pairs = {
+    ')': '(',
+    ']': '[',
+    '}': '{'
+  };
 
-  // TODO: Write your solution here.
+  for (let char of str) {
+    if (char === '(' || char === '[' || char === '{') {
+      stack.push(char);
+    } else {
+      if (stack.length === 0 || stack.pop() !== pairs[char]) {
+        return false;
+      }
+    }
+  }
+
+  return stack.length === 0;
+}
 
   return false;
 }
